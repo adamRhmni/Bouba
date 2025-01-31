@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Arizonia&family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.content-text {
+  background: url(../imgs/redlip.png);
+  background-size: 130px;
+  background-repeat: no-repeat;
+  background-position: top;
+  transition: background-position 1s ease-in-out, background-size 1s ease-in-out;
+}
+.content-text:hover {
+  background-position: bottom right;
+  background-size: 100px;
+}
+.content-text h1:nth-child(1) {
+  font-weight: bolder;
+  color: wheat;
+  margin-bottom: 1rem;
+  font-family: "Lora", serif;
+}
+.content-text h1:nth-child(2) {
+  font-weight: 700;
+  color: transparent;
+  margin-bottom: 1rem;
+  font-family: "Lora", serif;
+  font-weight: 700;
+  -webkit-text-stroke: 2px wheat;
+}
+.content-text h2 {
+  font-weight: 700;
+  color: #e2e2e2;
+  margin-bottom: 1rem;
+  align-items: center;
+  font-family: "Lora", serif;
+  font-weight: 300;
+}
+.content-text a {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #e2e2e2;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: 1px solid #e2e2e2;
+  border-radius: 5px;
+  transition: background-color 0.2s, color 0.2s;
+  font-family: "Lora", serif;
+}
+.Discover:hover {
+  background-color: #e2e2e2;
+  color: #000;
+}
+.content-image {
+  background: url(../imgs/main-background.png);
+  background-size: contain;
+}
+
+.content-image img {
+  height: auto;
+
+  overflow: hidden;
+  background: none;
+  animation: IMGUP 1s ease-out;
+}
+@keyframes IMGUP {
+  0% {
+    transform: translateY(-100%);
+    scale: 0.5;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5rem;
+    padding-bottom: 0;
+    padding-left: 7rem;
+    padding-right: 6rem;
+  }
+  .content-image img {
+    width: 25rem;
+  }
+  .content-text h1 {
+    font-size: 4rem;
+  }
+  .content-text h2 {
+    font-size: 0.9rem;
+  }
+  .content-text:hover {
+    rotate: 3deg;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .content-text {
+    margin-top: 5rem;
+  }
+  .content-image {
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .content-image img {
+    width: 20rem;
+  }
+  .header {
+    padding-bottom: 3rem;
+    padding-top: 1rem;
+  }
+  .content-text h1 {
+    font-size: 3.5rem;
+  }
+  .content-text h2 {
+    font-size: 0.9rem;
+  }
+}

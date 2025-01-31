@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(12, 61, 27);
+    padding: 5px;
+    color: antiquewhite;
+    /* background: url(../imeges/3840x2400-37360-4-green-leaves-clipart.png); */
+    background-size: cover;
+    
+}
+
+.CURSOUR{
+ 
+    
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    
+}
+
+.CURSOUR-active{
+
+    box-shadow: 0px 0px 150px 40PX #ffffffa4;
+    
+}
+.header .menu-normal a:active .content{
+    animation: PULLDOWN 0.2s ease-out;
+}
+@keyframes PULLDOWN {
+    0%{
+       
+    }
+    100%{
+        transform: translateY(100%);
+      
+    }
+}

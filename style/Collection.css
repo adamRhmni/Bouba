@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Arizonia&family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body{
+  font-family: "Lora";
+}
+.products-continer {
+  font-family: "Lora";
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: space-around;
+
+  align-items: center;
+  width: 100%;
+  margin-top: 4rem;
+}
+.product {
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+  height: 27rem;
+  /* box-shadow:inset 0 0 70px rgba(255, 255, 255, 0.171); */
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.product-img {
+  width: 100%;
+  height: 15rem;
+}
+.product-img img {
+  width: 100%;
+  height: 15rem;
+  object-fit: contain;
+  transition: transform 0.2s;
+}
+
+.product-img img:hover {
+  transform: scale(1.08);
+  transition: transform 0.2s;
+}
+.product-buy {
+  display: flex;
+  flex-direction: column;
+  height: 20rem;
+}
+.product-name p {
+  font-size: 1.7rem;
+  text-align: center;
+  text-transform: capitalize;
+  color: wheat;
+}
+.product-buy .quntity {
+  display: flex;
+  justify-content: space-around;
+}
+.product-buy .quntity input {
+  appearance: none;
+}
+.quntity:has(input:checked) label {
+  content: "";
+  border: 1px solid rgba(46, 46, 46, 0.801);
+}
+
+.product-buy a {
+  font-size: 1.8rem;
+  font-weight: 400;
+  /* width: 5rem; */
+
+  text-decoration: none;
+  display: inline-block;
+  /* padding: 0.5rem 1rem; */
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border: 1px solid wheat;
+  border-radius: 5px;
+  transition: background-color 0.2s, color 0.2s;
+  font-family: "Lora", serif;
+  text-align: center;
+  text-transform: uppercase;
+  color: wheat;
+  background: none;
+  cursor: pointer;
+}
+
+.product-buy a:hover {
+  background-color: wheat;
+  color: #000;
+  border: 1px solid wheat;
+}
+
+.product-buy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.but-button {
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product-name {
+  height: 5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product-brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 4rem;
+}
+.product-brand p {
+  text-align: center;
+  margin: 15px;
+  color: rgb(206, 206, 206);
+}
+.product-brand::after,
+.product-brand::before {
+  content: "";
+  border: 1px solid rgba(88, 88, 88, 0.356);
+  width: 50%;
+  height: 2px;
+}
+
+@media screen and (max-width: 500px) {
+  .product {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 721px) {
+  .products-continer {
+    padding-left: 9rem;
+    padding-right: 9rem;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+  }
+}

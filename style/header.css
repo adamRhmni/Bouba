@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Arizonia&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arizonia&family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.header {
+  display: flex;
+  flex-direction: row;
+  padding-top: 1.3rem;
+}
+.header .logo {
+  width: 200px;
+}
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem;
+  justify-content: center;
+}
+.sidebar nav a {
+  text-decoration: none;
+  color: wheat;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  font-family: "Lora", serif;
+}
+
+.header .logo a {
+  text-decoration: none;
+  color: wheat;
+  font-size: 2rem;
+  font-weight: 700;
+  padding-left: 1rem;
+  padding-right: 2rem;
+  text-transform: uppercase;
+  font-family: "Arizonia", cursive;
+  font-weight: 800;
+}
+.header .menu-normal a {
+  text-decoration: none;
+  color: wheat;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 0rem 1.5rem;
+  text-transform: uppercase;
+  font-family: "Lora", serif;
+}
+.header .menu-normal a::after {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 3px;
+  background-color: wheat;
+  transition: width 0.2s;
+}
+.header .menu-normal a:hover::after {
+  width: 100%;
+}
+.header .menu-humberger-bar {
+  padding-right: 1.5rem;
+}
+
+/* Styles for mobile devices */
+@media screen and (max-width: 768px) {
+  .header .menu-normal {
+    display: none;
+  }
+  .header {
+    justify-content: space-between;
+  }
+}
+/* Styles for desktop devices */
+@media screen and (min-width: 769px) {
+  .header .menu-humberger-bar {
+    display: none;
+  }
+  .header .logo {
+    width: 300px;
+    position: absolute;
+  }
+  .header .logo a {
+    font-size: 1.8rem;
+  }
+
+  .header .menu-normal {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+  }
+  .menu-g {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+/* Styles for tablet devices */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+}
+
+

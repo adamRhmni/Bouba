@@ -1,0 +1,121 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+
+body{
+    margin: 0;
+}
+
+:root{
+    --bar-width: 40px;
+    --bar-hight: 5px;
+    --bar-gab: 6.5px;
+    --frGround-color: wheat;
+    --BkGround-color: white;
+    --hamburger-margin: 7px;
+    --animation-timming:200ms ease-in-out;
+    --hamburger-hight: calc(var(--bar-hight)*3 + var(--bar-gab)* 2);
+}
+.hamburger-menu{
+    --x-width: calc(var(--hamburger-hight) * 1.41421356237);
+    display: flex;
+    flex-direction: column;
+    gap: var(--bar-gab);
+    width: max-content;
+    position: relative;
+    top: var(--hamburger-margin);
+    left:var(--hamburger-margin);
+    z-index: 1001;
+    cursor: pointer;
+
+
+    
+
+}
+.hamburger-menu:has(input:focus-visible)::before,
+.hamburger-menu:has(input:focus-visible)::after,
+.hamburger-menu input:focus-visible{
+    border: 1px solid var(--BkGround-color);
+    box-shadow: 0 0 0 1px var(--frGround-color);
+}
+.hamburger-menu input{
+    appearance: none;/* romove cheak box */
+    margin: 0;
+    padding: 0;
+    outline: none;
+    pointer-events: none;
+
+
+
+}
+.hamburger-menu::after, .hamburger-menu::before,.hamburger-menu input{
+    content: "";
+    width: var(--bar-width);
+    height: var(--bar-hight);
+    background-color: var(--frGround-color);
+    border-radius: 9999px;
+    transition: opacity var(--animation-timming),width var(--animation-timming),
+    rotate var(--animation-timming),
+    translate var(--animation-timming),
+    background-color var(--animation-timming);
+    transform-origin:left center  ;
+}
+
+.hamburger-menu input:checked{
+    /* background-color: blue; */
+    opacity: 0;
+    width: 0;
+    
+}
+
+
+
+.hamburger-menu:has(input:checked)::before{
+    rotate: 45deg;
+    width: var(--x-width);
+    translate: 0 calc(var(--bar-hight) / -2);
+}
+.hamburger-menu:has(input:checked)::after{
+    rotate: -45deg;
+    width: var(--x-width);
+    translate: 0 calc(var(--bar-hight) / 2);
+}
+.sidebar{
+    position: absolute;
+    transition: translate var(--animation-timming);
+    translate: 60%;
+    padding: 0.5rem 1rem;
+    padding-top: calc(var(--hamburger-hight) + var(--hamburger-margin) + 10px);
+
+    color: var(--BkGround-color);
+    max-width: 15rem;
+    min-height: 100vh;
+    top: 0;
+    display: none;
+/* 
+    background: transparent;
+    filter: blur(7) grayscale(1); */
+    backdrop-filter: blur(7px);
+
+    
+
+}
+
+/* if this cheked do               for  this  */
+.hamburger-menu:has(input:checked) + .sidebar{
+    translate: -80%;
+    display: flex;
+    z-index: 1000;
+
+}
+
+.hamburger-menu:has(input:checked){
+    --frGround-color: white;
+    --BkGround-color: #333;
+}
+
+/* .content p{
+    font-size: 30px;
+    background-color: black;
+} */
