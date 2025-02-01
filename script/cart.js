@@ -1,0 +1,1 @@
+console.log(JSON.parse(localStorage.getItem("Cartx")))

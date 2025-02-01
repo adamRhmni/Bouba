@@ -1,116 +1,360 @@
 @import url("https://fonts.googleapis.com/css2?family=Arizonia&family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-body{
-    font-family: "Lora";
+.poppins-thin {
+  font-family: "Poppins", serif;
+  font-weight: 100;
+  font-style: normal;
 }
-.BUY{
-    width: 100%;
-    height: 80vh;
+
+.poppins-extralight {
+  font-family: "Poppins", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+body {
+  font-family: "Lora";
+}
+.BUY {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.labels {
+}
+.container-title {
+}
+.info{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.labels{
-
-}
-.container-title{
-
-}
-
-.container-title h1{
-    font-size: 3.3rem;
-    text-transform: uppercase;
-    color: wheat;
+    margin-bottom:1.5rem ;
+  }
+  .info p {
     text-align: center;
-    padding-bottom: 4rem;
+    font-size: 2rem;
+    font-family: "Poppins";
+    color: white;
+    -webkit-text-stroke: 2px wheat;
+    letter-spacing: 0.2em;
+  }
 
+.container-title h1 {
+  font-size: 3.3rem;
+  text-transform: uppercase;
+  color: wheat;
+  text-align: center;
+  padding-bottom: 2rem;padding-top: 1rem;
+  font-family: "Poppins";
+  letter-spacing: 0.5rem;
 }
 
-.field{
-    
-    padding-bottom: 2rem;
+.field {
+  padding-bottom: 2rem;
 }
 /* text in top of taype */
-.label{
-    font-size: 2rem;
-    color: wheat;
-    text-transform: capitalize;
-  
+.label {
+  font-size: 1.5rem;
+  color: wheat;
+  text-transform: capitalize;
+  font-family: "Poppins";
 }
 
-.taype{
-    
-}
-.taype input{
-    width: 20rem;
-    height: 2rem;
-    background: transparent;
-    border: none;
-    border-bottom: 1px solid rgb(105, 105, 105);
-    color: wheat;
-    font-size: 20px;
-    text-align: center;
-    
-}
-.taype input::placeholder{
-    font-size: 18px;
-    text-align: center;
-}
-.buy-button{
-    font-size: 1.8rem;
-    font-weight: 400;
-    /* width: 5rem; */
-  
-    text-decoration: none;
-    display: inline-block;
-    /* padding: 0.5rem 1rem; */
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    border: 1px solid wheat;
-    border-radius: 5px;
-    transition: background-color 0.2s, color 0.2s;
-    font-family: "Lora", serif;
-    text-align: center;
-    text-transform: uppercase;
-    color: wheat;
-    background: none;
-    cursor: pointer;
 
+.taype {
 }
-.buy-button:hover{
-    color: black;
-    background: wheat;
+.taype input {
+  width: 20rem;
+  height: 2rem;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgb(105, 105, 105);
+  color: wheat;
+  font-size: 20px;
+  text-align: center;
+  font-family: "Poppins";
 }
-#message{
-    position: absolute;
-    display: none;
-    margin: 20px;
-    font-weight: bold;
-    color: green;
-    padding: 8px;
-    background-color: beige;
-    border-radius: 4px;
-    border-color: aquamarine;
+.taype input::placeholder {
+  font-size: 18px;
+  text-align: center;
+}
+.buy-button {
+  font-size: 1.8rem;
+  font-weight: 400;
+  /* width: 5rem; */
+
+  text-decoration: none;
+  display: inline-block;
+  /* padding: 0.5rem 1rem; */
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border: 1px solid wheat;
+  border-radius: 5px;
+  transition: background-color 0.2s, color 0.2s;
+  font-family: "Lora", serif;
+  text-align: center;
+  text-transform: uppercase;
+  color: wheat;
+  background: none;
+  cursor: pointer;
+}
+.buy-button:hover {
+  color: black;
+  background: wheat;
+}
+#message {
+  position: absolute;
+  display: none;
+  margin: 20px;
+  font-weight: bold;
+  color: green;
+  padding: 8px;
+  background-color: beige;
+  border-radius: 4px;
+  border-color: aquamarine;
+}
+.field-button {
+  display: flex;
+  justify-content: center;
+}
+.country {
+  width: 250px;
+  height: 3rem;
+  margin-bottom: 3rem;
+  font-size: 25px;
+  background: transparent;
+  color: wheat;
+  margin-top: 2rem;
+}
+.country option {
+  color: black;
+
+  font-size: 15px;
+}
+
+
+
+
+.product-name input {
+  font-size: 1.7rem;
+  text-align: center;
+  text-transform: capitalize;
+  color: wheat;
+  background-color: transparent;
+  border: none;
+  pointer-events: none;
+  font-family: "Poppins";
+}
+.product-buy .quntity {
+  display: flex;
+  justify-content: space-around;
+}
+.product {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: auto;
+    margin-bottom: 2rem;
+    /* box-shadow:inset 0 0 70px rgba(255, 255, 255, 0.171); */
+    padding-bottom: 1rem;
   
-}
-.field-button{
+    box-shadow: inset 0 0 100px 0px rgba(245, 222, 179, 0.185);
+  }
+  .product-img {
+    width: 100%;
+    height: 15rem;
+  }
+  .product-img img {
+    width: 100%;
+    height: 15rem;
+    object-fit: contain;
+    transition: transform 0.2s;
+  }
+  
+  .product-img img:hover {
+    transform: scale(1.08);
+    transition: transform 0.2s;
+  }
+  .product-name {
+    height: 5rem;
+  
     display: flex;
     justify-content: center;
-}
-.country{
-    width: 100%;
-    height: 3rem;
-    margin-bottom: 3rem;
-    font-size: 25px;
-    background: transparent;
-    color: wheat;
-    margin-top: 2rem;
-}
-.country option{
-    color: black;
+    align-items: center;
+  }
+  .product-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 4rem;
+  }
+  .product-brand p {
+    text-align: center;
+    margin: 15px;
+    color: rgb(206, 206, 206);
     
-    font-size: 15px;
+  }
+  .product-brand::after,
+  .product-brand::before {
+    content: "";
+    border: 1px solid rgba(88, 88, 88, 0.356);
+    width: 50%;
+    height: 2px;
+  }
 
-}
+  .quntity {
+    display: flex;
+    width: 250px;
+    justify-content: space-around;
+   border: 1px solid transparent;
+   
+  }
+  .quntity input{
+    appearance: none;
+  }
+ 
+  .quntity label:has(:not(input:checked)){
+    /* font-size: 20px; */
+    color: rgba(206, 206, 206, 0.815);
+    font-weight: 800;
+
+  }
+  .quntity label:has(input:checked){
+    /* font-size: 20px; */
+    border-bottom: 1px solid wheat;
+    font-weight: 800;
+
+  }
+  .informations-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 500px) {
+    .ALL_PRODUCTS{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+    .product{
+
+    }
+  }
+  @media screen and (min-width: 500px) {
+    .ALL_PRODUCTS{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4rem;
+        
+    }
+    .product{
+
+    }
+
+  }
+  

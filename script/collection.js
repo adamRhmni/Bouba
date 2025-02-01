@@ -213,31 +213,53 @@ function renderCollection() {
             <label><input type="radio" name="size">30ML</label>
             <label><input type="radio" name="size">50ML</label>
           </div> -->
-          <div class='but-button'><a href="./buy.html">buy</a></div>
-          
+          <div class='but-button'><a href='./buy.html' class="product-buy-button" data-id='${product.id}'>buy</a></div>
         </div>
-
-
       </div>`;
   });
 
   productS.innerHTML = collectionHTML;
 }
-const cart = [];
 renderCollection();
+
+const Cartx = [];
+// add to cart
+
 const BuyBody = document.querySelector(".js-products-BUY");
-const buyBotton = document.querySelectorAll(".but-button");
+const buyBotton = document.querySelectorAll(".product-buy-button");
+buyBotton.forEach((button) => {
+  button.addEventListener("click", () => {
+    if (Cartx.length === 0) {
+      Cartx.push({
+        id: button.dataset.id,
+        quntity: 1,
+      });
+    } else {
+      for (let i = 0; i < Cartx.length; i++) {
+        if(Cartx[i].id === button.dataset.id){
+          Cartx[i].quntity +=1;
+          break;
+        }else if(i == (Cartx.length-1)){
+          Cartx.push({
+            id:button.dataset.id,
+            quntity: 1
+          })
+          break;
+        }
+
+      }
+    }
+
+    localStorage.setItem("Cartx",JSON.stringify(Cartx));
+;
+  });
 
 
-//   buyBotton.forEach(button => {
+});
 
-//     //   button.addEventListener('click', () => {
-//     //     
-//     // })
-  
-// console.log(button)
 
-//     });
 
- 
+
+
+
 

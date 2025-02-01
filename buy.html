@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BOUBA FRAGRANCES</title>
     <link rel="stylesheet" href="style/humberger-bar.css" />
-    <link rel="stylesheet" href="style/Collection.css" />
+
     <link rel="stylesheet" href="style/header.css" />
     <link rel="stylesheet" href="style/general.css" />
     <link rel="stylesheet" href="style/BUY.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arizonia&family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="page">
@@ -35,7 +38,7 @@
         </div>
       </div>
       <div class="BUY">
-      
+
         <div class="submit">
           <section class="labels">
             <div class="m">
@@ -45,109 +48,118 @@
             </div>
           </section>
           <form id="form"  method="POST">
-            <div class="js-products-BUY" ></div>
-            <div class="field">
-              <label class="label">name :</label>
-              <div class="taype">
-                <input
-                  class="input"
-                  type="text"
-                  placeholder=""
-                  name="Client Name"
-                />
-              </div>
-            </div>
-            <div class="field">
-              <label class="label">number :</label>
-              <div class="taype">
-                <input
-                  class="input"
-                  type="tel"
-                  placeholder=""
-                  name="Number"
-                />
-              </div>
-            </div>
-            <div class="field">
-              <label class="label">Address :</label>
-              <div class="taype">
-                <select class="country" name="Address">
-                  <option value="adrar">Adrar</option>
-                  <option value="chlef">Chlef</option>
-                  <option value="laghouat">Laghouat</option>
-                  <option value="oum-el-bouaghi">Oum El Bouaghi</option>
-                  <option value="batna">Batna</option>
-                  <option value="bejaia">Béjaïa</option>
-                  <option value="biskra">Biskra</option>
-                  <option value="bechar">Béchar</option>
-                  <option value="blida">Blida</option>
-                  <option value="bouira">Bouira</option>
-                  <option value="tamanrasset">Tamanrasset</option>
-                  <option value="tebessa">Tébessa</option>
-                  <option value="tlemcen">Tlemcen</option>
-                  <option value="tiaret">Tiaret</option>
-                  <option value="tizi-ouzou">Tizi Ouzou</option>
-                  <option value="algiers">Algiers</option>
-                  <option value="djelfa">Djelfa</option>
-                  <option value="jijel">Jijel</option>
-                  <option value="setif">Sétif</option>
-                  <option value="saida">Saïda</option>
-                  <option value="skikda">Skikda</option>
-                  <option value="sidi-bel-abbes">Sidi Bel Abbès</option>
-                  <option value="annaba">Annaba</option>
-                  <option value="guelma">Guelma</option>
-                  <option value="constantine">Constantine</option>
-                  <option value="medea">Médéa</option>
-                  <option value="mostaganem">Mostaganem</option>
-                  <option value="msila">M'Sila</option>
-                  <option value="mascara">Mascara</option>
-                  <option value="ouargla">Ouargla</option>
-                  <option value="oran">Oran</option>
-                  <option value="el-bayadh">El Bayadh</option>
-                  <option value="illizi">Illizi</option>
-                  <option value="bordj-bou-arreridj">Bordj Bou Arréridj</option>
-                  <option value="boumerdes">Boumerdès</option>
-                  <option value="el-tarf">El Tarf</option>
-                  <option value="tindouf">Tindouf</option>
-                  <option value="tissemsilt">Tissemsilt</option>
-                  <option value="el-oued">El Oued</option>
-                  <option value="khenchela">Khenchela</option>
-                  <option value="soukahras">Souk Ahras</option>
-                  <option value="tipaza">Tipaza</option>
-                  <option value="mila">Mila</option>
-                  <option value="ain-defla">Aïn Defla</option>
-                  <option value="naama">Naâma</option>
-                  <option value="ain-temouchent">Aïn Témouchent</option>
-                  <option value="ghardaia">Ghardaïa</option>
-                  <option value="relizane">Relizane</option>
-                  <option value="timimoun">Timimoun</option>
-                  <option value="bordj-badji-mokhtar">Bordj Badji Mokhtar</option>
-                  <option value="ouled-djellal">Ouled Djellal</option>
-                  <option value="beni-abbes">Béni Abbès</option>
-                  <option value="in-salah">In Salah</option>
-                  <option value="in-guezzam">In Guezzam</option>
-                  <option value="touggourt">Touggourt</option>
-                  <option value="djanet">Djanet</option>
-                  <option value="el-mghair">El M'Ghair</option>
-                  <option value="el-menia">El Menia</option>
-                </select>
-                
+            <div class="ALL_PRODUCTS">
+
+
             </div>
 
-            <div class="field-button">
-              <div class="taype">
-                <button
-                  class="buy-button"
-                  type="submit"
-                  id="submit-button">
-                  BUY
-                </button>
+            <div class="informations-box">
+              <div class="info"><p>Enter your informations</p></div> 
+              <div class="field">
+                <label class="label">name :</label>
+                <div class="taype">
+                  <input
+                    class="input"
+                    type="text"
+                    placeholder=""
+                    name="Client Name"
+                  />
+                </div>
               </div>
+              <div class="field">
+                <label class="label">number :</label>
+                <div class="taype">
+                  <input
+                    class="input"
+                    type="tel"
+                    placeholder=""
+                    name="Number"
+                  />
+                </div>
+              </div>
+              <div class="field">
+                <label class="label Address">Address :</label>
+                <div class="taype">
+                  <select class="country" name="Address">
+                    <option value="adrar">Adrar</option>
+                    <option value="chlef">Chlef</option>
+                    <option value="laghouat">Laghouat</option>
+                    <option value="oum-el-bouaghi">Oum El Bouaghi</option>
+                    <option value="batna">Batna</option>
+                    <option value="bejaia">Béjaïa</option>
+                    <option value="biskra">Biskra</option>
+                    <option value="bechar">Béchar</option>
+                    <option value="blida">Blida</option>
+                    <option value="bouira">Bouira</option>
+                    <option value="tamanrasset">Tamanrasset</option>
+                    <option value="tebessa">Tébessa</option>
+                    <option value="tlemcen">Tlemcen</option>
+                    <option value="tiaret">Tiaret</option>
+                    <option value="tizi-ouzou">Tizi Ouzou</option>
+                    <option value="algiers">Algiers</option>
+                    <option value="djelfa">Djelfa</option>
+                    <option value="jijel">Jijel</option>
+                    <option value="setif">Sétif</option>
+                    <option value="saida">Saïda</option>
+                    <option value="skikda">Skikda</option>
+                    <option value="sidi-bel-abbes">Sidi Bel Abbès</option>
+                    <option value="annaba">Annaba</option>
+                    <option value="guelma">Guelma</option>
+                    <option value="constantine">Constantine</option>
+                    <option value="medea">Médéa</option>
+                    <option value="mostaganem">Mostaganem</option>
+                    <option value="msila">M'Sila</option>
+                    <option value="mascara">Mascara</option>
+                    <option value="ouargla">Ouargla</option>
+                    <option value="oran">Oran</option>
+                    <option value="el-bayadh">El Bayadh</option>
+                    <option value="illizi">Illizi</option>
+                    <option value="bordj-bou-arreridj">Bordj Bou Arréridj</option>
+                    <option value="boumerdes">Boumerdès</option>
+                    <option value="el-tarf">El Tarf</option>
+                    <option value="tindouf">Tindouf</option>
+                    <option value="tissemsilt">Tissemsilt</option>
+                    <option value="el-oued">El Oued</option>
+                    <option value="khenchela">Khenchela</option>
+                    <option value="soukahras">Souk Ahras</option>
+                    <option value="tipaza">Tipaza</option>
+                    <option value="mila">Mila</option>
+                    <option value="ain-defla">Aïn Defla</option>
+                    <option value="naama">Naâma</option>
+                    <option value="ain-temouchent">Aïn Témouchent</option>
+                    <option value="ghardaia">Ghardaïa</option>
+                    <option value="relizane">Relizane</option>
+                    <option value="timimoun">Timimoun</option>
+                    <option value="bordj-badji-mokhtar">Bordj Badji Mokhtar</option>
+                    <option value="ouled-djellal">Ouled Djellal</option>
+                    <option value="beni-abbes">Béni Abbès</option>
+                    <option value="in-salah">In Salah</option>
+                    <option value="in-guezzam">In Guezzam</option>
+                    <option value="touggourt">Touggourt</option>
+                    <option value="djanet">Djanet</option>
+                    <option value="el-mghair">El M'Ghair</option>
+                    <option value="el-menia">El Menia</option>
+                  </select>
+                  
+              </div>
+  
+              <div class="field-button">
+                <div class="taype">
+                  <button
+                    class="buy-button"
+                    type="submit"
+                    id="submit-button">
+                    BUY
+                  </button>
+                </div>
+              </div>
+            </form>
+            <div
+              id="message"></div>
+          </div>
+
             </div>
-          </form>
-          <div
-            id="message"></div>
-        </div>
+
       
 
       </div>
