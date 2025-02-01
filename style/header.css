@@ -130,11 +130,12 @@
 .sidebar nav a {
   text-decoration: none;
   color: wheat;
-  font-size: 1.5rem;
+  font-size: 1.9rem;
   font-weight: 700;
   padding: 0.5rem 1rem;
   text-transform: uppercase;
   font-family: "Lora", serif;
+  /* -webkit-text-stroke: 1px rgb(0, 0, 0); */
 }
 
 .header .logo a {

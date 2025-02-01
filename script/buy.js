@@ -1,6 +1,6 @@
 const products = [
   {
-    name: "Dior Sauvage",
+    name: "Sauvage",
     img: "./imgs/collection/Dior Sauvage.jpg",
     id: "ds-001",
     brand: "Dior",
@@ -21,7 +21,7 @@ const products = [
     name: "L'Homme Intense",
     img: "./imgs/collection/L'Homme Intense.jpg",
     id: "lhi-004",
-    brand: "Yves Saint Laurent",
+    brand: "Dior",
   },
   {
     name: "Le Male Elixir",
@@ -36,7 +36,7 @@ const products = [
     brand: "Hugo Boss",
   },
   {
-    name: "Nishane Ani",
+    name: "Ani",
     img: "./imgs/collection/Nishane Ani.jpg",
     id: "na-007",
     brand: "Nishane",
@@ -54,7 +54,7 @@ const products = [
     brand: "Yves Saint Laurent",
   },
   {
-    name: "Louis Vuitton Afternoon Swim",
+    name: "Afternoon Swim",
     img: "./imgs/collection/Louis Vuitton Afternoon Swim.jpg",
     id: "lvas-010",
     brand: "Louis Vuitton",
@@ -66,19 +66,19 @@ const products = [
     brand: "Paco Rabanne",
   },
   {
-    name: "Lacoste Booster",
+    name: "Booster",
     img: "./imgs/collection/Lacoste Booster.jpg",
     id: "lb-022",
     brand: "Lacoste",
   },
   {
-    name: "Azzaro Wanted",
+    name: "Wanted",
     img: "./imgs/collection/Azzaro Wanted.jpg",
     id: "aw-023",
     brand: "Azzaro",
   },
   {
-    name: "Creed Aventus",
+    name: "Aventus",
     img: "./imgs/collection/Creed Aventus.jpg",
     id: "ca-024",
     brand: "Creed",
@@ -96,13 +96,13 @@ const products = [
     brand: "Lacoste",
   },
   {
-    name: "Cartier Déclaration",
+    name: "Déclaration",
     img: "./imgs/collection/Cartier Déclaration.jpg",
     id: "cd-027",
     brand: "Cartier",
   },
   {
-    name: "Montblanc Legend",
+    name: "Legend",
     img: "./imgs/collection/Montblanc Legend.jpg",
     id: "ml-028",
     brand: "Montblanc",
@@ -144,7 +144,7 @@ const products = [
     brand: "Givenchy",
   },
   {
-    name: "Kirke Tiziana Terenzi",
+    name: "Kirke",
     img: "./imgs/collection/Kirke Tiziana Terenzi.jpg",
     id: "ktt-035",
     brand: "Tiziana Terenzi",
@@ -162,7 +162,7 @@ const products = [
     brand: "Jean Paul Gaultier",
   },
   {
-    name: "Valentino",
+    name: "Valentino Uomo Born In Roma",
     img: "./imgs/collection/Valentino.jpg",
     id: "val-038",
     brand: "Valentino",
@@ -174,7 +174,7 @@ const products = [
     brand: "Antonio Banderas",
   },
   {
-    name: "YSL MYSLF",
+    name: "MYSLF",
     img: "./imgs/collection/YSL MYSLF.jpg",
     id: "ym-040",
     brand: "Yves Saint Laurent",

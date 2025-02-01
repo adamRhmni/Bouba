@@ -160,6 +160,7 @@
 .content-image {
   background: url(../imgs/main-background.png);
   background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .content-image img {
@@ -179,7 +180,7 @@
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 500px) {
   .content {
     display: flex;
     justify-content: space-between;
@@ -199,11 +200,20 @@
     font-size: 0.9rem;
   }
   .content-text:hover {
-    rotate: 3deg;
+    rotate: 1deg;
   }
+  body{
+  
+    font-family: "Lora";
+    background: url('../imgs/gif.gif');
+    background-position-y:bottom ;
+    background-size: contain;
+    background-repeat: repeat-y;
+    
+  } 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 500px) {
   .content {
     display: flex;
     flex-direction: column-reverse;
@@ -233,4 +243,13 @@
   .content-text h2 {
     font-size: 0.9rem;
   }
+  body{
+  
+    font-family: "Lora";
+    background: url('../imgs/gif.gif');
+    background-position-y:bottom ;
+    background-size: contain;
+    background-repeat: repeat-y;
+    
+  } 
 }

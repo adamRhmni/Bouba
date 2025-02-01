@@ -85,11 +85,12 @@ body{
     position: absolute;
     transition: translate var(--animation-timming);
     translate: 60%;
-    padding: 0.5rem 1rem;
+    /* padding: 0.5rem 1rem; */
+    
     padding-top: calc(var(--hamburger-hight) + var(--hamburger-margin) + 10px);
 
     color: var(--BkGround-color);
-    max-width: 15rem;
+    max-width: 16rem;
     min-height: 100vh;
     top: 0;
     display: none;

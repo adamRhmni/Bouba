@@ -7,19 +7,20 @@ let mouseCURSOUR = document.querySelector('.CURSOUR');
 //     e.img.style.setProperty('--x', x + 'px');
 //     e.img.style.setProperty('--y', y + 'px');
 // } 
-
-img.addEventListener('mousemove', CURSOUR);
+let body = document.body
+body.addEventListener('mousemove', CURSOUR);
 
 function CURSOUR(e){
     mouseCURSOUR.style.left = e.pageX + 'px';
     mouseCURSOUR.style.top = e.pageY + 'px';
+    mouseCURSOUR.classList.add('CURSOUR-active');
 }
 
-img.addEventListener('mouseenter', () =>{
+body.addEventListener('mouseenter', () =>{
     mouseCURSOUR.classList.add('CURSOUR-active');
 } )
 
-img.addEventListener('mouseleave', () =>{
-    mouseCURSOUR.classList.remove('CURSOUR-active');
-} )
+// img.addEventListener('mouseleave', () =>{
+//     mouseCURSOUR.classList.remove('CURSOUR-active');
+// } )
 

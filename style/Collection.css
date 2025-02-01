@@ -107,9 +107,7 @@
   font-style: italic;
 }
 
-body{
-  font-family: "Lora";
-}
+
 
 .products-continer {
   font-family: "Lora";
@@ -130,7 +128,13 @@ body{
   /* box-shadow:inset 0 0 70px rgba(255, 255, 255, 0.171); */
   margin-top: 2rem;
   margin-bottom: 2rem;
+  animation: side linear;
+
 }
+@keyframes side{
+
+}
+
 .product-img {
   width: 100%;
   height: 15rem;
@@ -245,7 +249,7 @@ body{
   }
   .product-img img:hover {
   
-    transform: scale(1.5);
+    transform: scale(1.1);
     transition: transform 0.2s;
     z-index: 20;
   }
@@ -257,4 +261,22 @@ body{
     flex-wrap: wrap;
     gap: 0.7rem;
   }
+}
+
+
+.product:nth-child(even){
+  opacity: 0;
+  transform: translateX(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.product:not(:nth-child(even)){
+  opacity: 0;
+  transform: translateX(-50px);
+  
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.product.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
