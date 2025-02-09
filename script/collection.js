@@ -293,28 +293,13 @@ const buyBotton = document.querySelectorAll(".product-buy-button");
 
 buyBotton.forEach((button) => {
   button.addEventListener("click", () => {
-    if (Cartx.length === 0) {
-      Cartx.push({
-        id: button.dataset.id,
-        quntity: 1,
-      });
-    } else {
-      for (let i = 0; i < Cartx.length; i++) {
-        if (Cartx[i].id === button.dataset.id) {
-          Cartx[i].quntity += 1;
-          break;
-        } else if (i == Cartx.length - 1) {
-          Cartx.push({
-            id: button.dataset.id,
-            quntity: 1,
-          });
-          break;
-        }
+    products.forEach((pp) => {
+      if (button.dataset.id === pp.id) {
+        localStorage.removeItem("productView");
+        localStorage.setItem("productView",JSON.stringify(pp.id));
       }
-    }
-
-    localStorage.setItem("Cartx", JSON.stringify(Cartx));
-  });
+    });
+  })
 });
 document.addEventListener("DOMContentLoaded", () => {
   const elements = document.querySelectorAll(".product");

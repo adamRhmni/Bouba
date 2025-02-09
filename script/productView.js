@@ -291,7 +291,7 @@ function view(x){
               </div>
           
               <div class="productview-price">
-                <h1 class="ourprice">${localStorage.getItem("prix")}</h1><span>DA</span>
+                <h1 class="ourprice">${localStorage.getItem("prix") ? localStorage.getItem("prix") : '400'}</h1><span>DA</span>
               </div>
               <div class="productview-buyButton">
                 <a href="buy.html">
