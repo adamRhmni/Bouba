@@ -202,15 +202,7 @@
   .content-text:hover {
     rotate: 1deg;
   }
-  body{
-  
-    font-family: "Lora";
-    background: url('../imgs/gif.gif');
-    background-position-y:bottom ;
-    background-size: contain;
-    background-repeat: repeat-y;
-    
-  } 
+
 }
 
 @media screen and (max-width: 500px) {
@@ -246,10 +238,6 @@
   body{
   
     font-family: "Lora";
-    background: url('../imgs/gif.gif');
-    background-position-y:bottom ;
-    background-size: contain;
-    background-repeat: repeat-y;
-    
+    background-color: rgb(12, 61, 27); 
   } 
 }

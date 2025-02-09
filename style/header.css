@@ -116,6 +116,7 @@
   display: flex;
   flex-direction: row;
   padding-top: 1.3rem;
+
 }
 .header .logo {
   width: 200px;
@@ -129,7 +130,7 @@
 }
 .sidebar nav a {
   text-decoration: none;
-  color: wheat;
+  color: #D8C9AE;
   font-size: 1.9rem;
   font-weight: 700;
   padding: 0.5rem 1rem;
@@ -140,7 +141,7 @@
 
 .header .logo a {
   text-decoration: none;
-  color: wheat;
+  color: #D8C9AE;
   font-size: 2rem;
   font-weight: 700;
   padding-left: 1rem;
@@ -152,7 +153,7 @@
 }
 .header .menu-normal a {
   text-decoration: none;
-  color: wheat;
+  color: #D8C9AE;
   font-size: 1.2rem;
   font-weight: 700;
   padding: 0rem 1.5rem;
@@ -164,7 +165,7 @@
   display: block;
   width: 15px;
   height: 3px;
-  background-color: wheat;
+  background-color: #D8C9AE;
   transition: width 0.2s;
 }
 .header .menu-normal a:hover::after {

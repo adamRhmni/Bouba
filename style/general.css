@@ -113,12 +113,28 @@
 }
 body{
     font-family: 'Roboto', sans-serif;
-    background-color: rgb(12, 61, 27); 
+    /* background-color: rgb(12, 61, 27);  */
+    background: linear-gradient(70deg,rgb(4, 54, 19),rgb(9, 71, 26),rgb(9, 53, 22),rgb(5, 32, 13),rgb(10, 63, 26),rgb(7, 83, 30),rgb(9, 59, 24),rgb(9, 71, 26),rgb(9, 53, 22),rgb(5, 32, 13),rgb(10, 63, 26),rgb(1, 71, 22),rgb(5, 56, 21),rgb(9, 71, 26),rgb(9, 53, 22),rgb(35, 83, 50),rgb(10, 63, 26),rgb(7, 83, 30));
     padding: 5px;
-    color: antiquewhite;
+    color: wheat;
     /* background: url(../imeges/3840x2400-37360-4-green-leaves-clipart.png); */
-    background-size: cover;
+    animation: bg 15s linear infinite forwards;
+    background-size: 200% 200%;
     
+}
+@keyframes bg {
+  0% {
+    background-position: 0% 50%;
+    background-size: 150% 150%;
+  }
+  50% {
+    background-position: 100% 50%;
+    background-size: 250% 300%;
+  }
+  100% {
+    background-position: 0% 50%;
+    background-size: 150% 150%;
+  }
 }
 
 .CURSOUR{
@@ -132,7 +148,7 @@ body{
 
 .CURSOUR-active{
 
-    box-shadow: 0px 0px 150px 40PX #ffffffa4;
+    box-shadow: 0px 0px 150px 40PX #ffffff4b;
     
 }
 .header .menu-normal a:active .content{

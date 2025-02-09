@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css2?family=Arizonia&family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.page {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.productview {
+  padding-top: 2rem;
+
+  display: flex;
+  flex-direction: row;
+
+
+  font-family: "Lora";
+}
+.productview-close {
+  position: absolute;
+  top: 4rem;
+  left: 1.5rem;
+  cursor: pointer;
+}
+.productview-close img{
+    
+    
+}
+.product-brand {
+    height: 2rem;
+  }
+.productview-img {
+  width: 50%;
+  height: fit-content;
+  padding: 4rem;
+}
+.productview-img img {
+  padding: 1rem;
+  width: 500px;
+  max-width: 500px;
+  min-width: 300px;
+  border: 1px solid rgba(128, 128, 128, 0.247);
+  filter: drop-shadow(17px 15px 20px rgba(0, 0, 0, 0.952));
+}
+.productview-texts {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding-left: 5rem;
+  padding-right: 1rem;
+}
+.productview-name p {
+  font-size: 3rem;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 0;
+}
+.productview-brand p {
+  font-size: 1.2rem;
+  text-align: center;
+  text-transform: capitalize;
+
+}
+.productview-price h1 {
+  font-size: 4rem;
+  text-align: left;
+  color: wheat;
+  font-weight: 400;
+  letter-spacing: 5px;
+  font-family: "Lora";
+  display: inline;
+}
+.productview-price span {
+  font-size: 4rem;
+  color: transparent;
+  -webkit-text-stroke: 1px #f5deb3;
+  font-weight: 600;
+  font-family: "Lora";
+  padding-left: 1rem;
+}
+
+.productview-buyButton button {
+  width: 5rem;
+  height: 2rem;
+}
+.bottle-size {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.productview-bottle-size {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-around;
+  padding-bottom: 1rem;
+}
+.productview-bottle-size h2 {
+  font-size: 1.4rem;
+  padding-bottom: 1rem;
+  font-weight: 400;
+}
+.productview-bottle-size input {
+  appearance: none;
+}
+
+.productview-bottle-size label:has(:not(input:checked)) {
+  color: wheat;
+  font-weight: 800;
+  border: 1px solid wheat;
+  padding: 0.6rem 1.6rem;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+.productview-bottle-size label:has(input:checked) {
+  font-weight: 800;
+  color: black;
+  background-color: wheat;
+  border: 1px solid transparent;
+  padding: 0.6rem 1.6rem;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+.GENDER {
+  width: 100%;
+  border-bottom: 2px solid rgba(88, 88, 88, 0.356);
+  padding-bottom: 2rem;
+}
+.GENDER .GENDER-title p {
+  font-size: 1.4rem;
+  padding-bottom: 1rem;
+}
+.GENDER .GENDER-wht p {
+  display: inline;
+  color: wheat;
+  font-weight: 800;
+  border: 1px solid wheat;
+  padding: 0.6rem 1.6rem;
+  border-radius: 2rem;
+}
+@media screen and (max-width: 500px) {
+}
+@media screen and (min-width: 500px) {
+  .productview {
+    height: 100vh;
+    top: 4rem;
+
+    width: 90%;
+  }
+}
+
+.buyButton {
+  cursor: pointer;
+  --width: 200px;
+  --height: 50px;
+  --tooltip-height: 30px;
+  --tooltip-width: 90px;
+  --gap-between-tooltip-to-button: 18px;
+  --button-color: transparent;
+  --tooltip-color: #fff;
+  width: var(--width);
+  height: var(--height);
+  background: var(--button-color);
+  position: relative;
+  text-align: center;
+  border-radius: 0.5em;
+  font-family: "Arial";
+  transition: background 0.7s;
+  border: 1px solid wheat;
+  border-radius: 2rem;
+  margin-top: 1rem;
+}
+
+.buyButton::before {
+  position: absolute;
+  content: attr(data-tooltip);
+  width: var(--tooltip-width);
+  height: var(--tooltip-height);
+  background-color: #555;
+  font-size: 0.9rem;
+  color: #fff;
+  border-radius: 0.25em;
+  line-height: var(--tooltip-height);
+  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) + 10px);
+  left: calc(50% - var(--tooltip-width) / 2);
+}
+
+.buyButton::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top-color: #555;
+  left: calc(50% - 10px);
+  bottom: calc(100% + var(--gap-between-tooltip-to-button) - 10px);
+}
+
+.buyButton::after,
+.buyButton::before {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-wrapper,
+.text,
+.icon {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  color: wheat;
+  font-weight: 600;
+}
+
+.text {
+  top: 0;
+  font-size: 25px;
+  font-family: "Lora";
+}
+
+.text,
+.icon {
+  transition: top 0.5s;
+}
+
+.icon {
+  color: wheat;
+  top: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.buyButton:hover {
+  background: transparent;
+}
+
+.buyButton:hover .text {
+  top: -100%;
+}
+
+.buyButton:hover .icon {
+  top: 0;
+}
+
+.buyButton:hover:before,
+.buyButton:hover:after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.buyButton:hover:after {
+  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) - 20px);
+}
+
+.buyButton:hover:before {
+  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
+}
+.productview-buyButton a{
+  width: 100%;
+}
+
+@media screen and (max-width: 1125px) {
+  .productview {
+    height: fit-content;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 0;
+  }
+  .productview-img {
+    padding: 0;
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .productview-img img {
+    width: 90%;
+    border: none;
+  }
+  .productview-texts {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    justify-content: center;
+
+    padding-bottom: 1rem;
+  }
+
+  .productview-bottle-size {
+    padding-left: 1rem;
+  }
+  .GENDER{
+    padding-left: 1rem;
+  }
+  .productview-price{
+    padding-left: 1rem;
+  }
+  .productview-buyButton{
+    padding-left: 1rem;
+
+  }
+  .productview-name p{
+    font-size: 2.5rem;
+  
+  }
+  .productview-buyButton{
+    display: flex;
+    justify-content: center;
+  }
+  .buyButton {
+    cursor: pointer;
+    --width: 90%;
+    --height: 60px;
+
+    max-width: 400PX;
+
+    margin-top: .7rem;
+  }
+
+  
+}

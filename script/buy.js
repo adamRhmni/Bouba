@@ -256,11 +256,10 @@ cart.forEach((product,i) => {
   products.forEach(ORGproduct =>{
     if(product.id === ORGproduct.id){
       for(let y=0;y<product.quntity;y++){
-        HTML = `
+        HTML += `
         <div class="product">
           <div class="product-img">
             <img src="${ORGproduct.img}" alt="">
-            
           </div>
           
           <div class="product-buy">
@@ -270,21 +269,25 @@ cart.forEach((product,i) => {
            <div class='product-name' >
               <input type="text" value="${ORGproduct.name}" name="Parfume">
            </div>
-  
+        
             <div class="quntity">
-              <label><input type="radio" name="size" value="10ML">10ML</label>
-              <label><input type="radio" name="size" value="20ML" checked>20ML</label>
-              <label><input type="radio" name="size" value="30ML">30ML</label>
-              <label><input type="radio" name="size" value="50ML">50ML</label>
+              <label><input type="radio" name="size" value="10ML" class="checkedB">10ML</label>
+              <label><input type="radio" name="size" value="20ML" class="checkedB">20ML</label>
+              <label><input type="radio" name="size" value="30ML" class="checkedB">30ML</label>
+              <label><input type="radio" name="size" value="50ML" class="checkedB">50ML</label>
             </div> 
 
           </div>
         </div>
-`
+        `;
 BODY_OF_PRODUCT.innerHTML=HTML;
       }
  
     }
   })
 });
-
+document.querySelectorAll(".checkedB").forEach(button =>{
+  if(localStorage.getItem("checked") === button.defaultValue){
+    button.defaultChecked = true;
+  }
+})
